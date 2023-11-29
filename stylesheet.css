@@ -9,11 +9,17 @@ body {
     transition: all 0.2s cubic-bezier(.4, 0, .2, 1);
     left: 60%;
     bottom: 0px;
+    pointer-events: none;
 }
 
 p {
     color: white;
-    font-family: Tahoma, Verdana, sans-serif;;
+    font-family: 'Tahoma', 'Verdana', sans-serif;
     margin-left: 51px;
-} 
+}
+
+.name {
+    margin-left: 51px;
+    margin-top: 0px; 
+}
 
