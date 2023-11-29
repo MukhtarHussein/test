@@ -1,0 +1,19 @@
+body {
+    background: black;
+}
+
+.vile {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    transition: all 0.2s cubic-bezier(.4, 0, .2, 1);
+    left: 60%;
+    bottom: 0px;
+}
+
+p {
+    color: white;
+    font-family: Tahoma, Verdana, sans-serif;;
+    margin-left: 51px;
+} 
+
