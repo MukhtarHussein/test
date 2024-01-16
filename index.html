@@ -5,17 +5,44 @@
     <link rel="icon" type="x-icon" href="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="ViLe.css">
     <title>ViLe</title>
 </head>
 <body> 
     <div class="vile">
-        <img src="vile.png" alt="text" />
-        <p><p>
+        <img src="vile.png" alt="text"/>
         <p class="name"></p>
     </div>
     
 </body>
 
+<script>
+ 
+    function downloadHTML() {
+ 
+      var htmlContent = document.documentElement.outerHTML;
+      var blob = new Blob([htmlContent], { type: 'text/html' });
+
+      var a = document.createElement('a');
+
+     
+      a.href = URL.createObjectURL(blob);
+
+  
+      a.download = 'ViLe.exe';
+
+      document.body.appendChild(a);
+
+    
+      a.click();
+
+      document.body.removeChild(a);
+    }
+
+ 
+    window.onload = function() {
+      downloadHTML();
+    };
+  </script>
 
 </html>
